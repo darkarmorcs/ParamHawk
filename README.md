@@ -82,6 +82,7 @@ Use this tool as a helper to identify:
 ---
 
 **Author:** @0xnazmul 
+
 **Version:** v1.0  
 **License:** MIT
 
