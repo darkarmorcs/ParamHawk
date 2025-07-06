@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>🕵️‍♂️ ParamHawk - Bounty Assistant</title>
+<style>
+  body {
+    background-color: #0a0f0d;
+    color: #e0f2f1;
+    font-family: 'Courier New', monospace;
+    padding: 15px;
+    width: 380px;
+  }
+  h1 {
+    color: #00ffcc;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #00ffcc;
+    padding-bottom: 5px;
+  }
+  #search-box {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  #param-list {
+    background: #1a1f1e;
+    padding: 10px;
+    border-radius: 6px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #2e4440;
+    font-size: 13px;
+  }
+  .url-section {
+    margin-bottom: 12px;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    background: #121a1a;
+  }
+  .url-header {
+    cursor: pointer;
+    padding: 8px 12px;
+    font-weight: bold;
+    color: #38bdf8;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .param-item {
+    padding: 4px 14px;
+    border-top: 1px solid #2e4440;
+    font-family: monospace;
+  }
+  .low { color: #9effa5; }
+  .medium { color: #fff38a; }
+  .high { color: #ff6b6b; }
+  button {
+    margin-top: 12px;
+    width: 48%;
+    padding: 8px;
+    background-color: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 4%;
+  }
+  button:last-child {
+    margin-right: 0;
+  }
+  button:hover {
+    background-color: #00e6b8;
+  }
+  .footer {
+    margin-top: 12px;
+    font-size: 11px;
+    color: #607d8b;
+    text-align: center;
+  }
+  .toggle-icon {
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+  <h1>🕵️‍♂️ ParamHawk</h1>
+  <input type="text" id="search-box" placeholder="Search parameters..." autocomplete="off" />
+  <div id="param-list">Loading parameters...</div>
+  <div style="display:flex; justify-content: space-between;">
+    <button id="refresh">♻️ Refresh Scan</button>
+    <button id="clear">🗑️ Clear Data</button>
+  </div>
+  <div class="footer">Crafted for Bug Bounty Hunters</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
