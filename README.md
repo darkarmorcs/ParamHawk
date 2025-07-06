@@ -19,13 +19,13 @@ This is a basic Chrome Extension designed for bug bounty hunters and testers. It
 
 ParamHawk/
 │
-├── manifest.json # Extension settings
-├── background.js # For capturing POST and headers
-├── content.js # Extracts GET parameters and JS files
-├── popup.html # UI layout
-├── popup.js # Displays data in the popup
-├── styles.css # Basic styles
-└── icons/ # Extension icons
+├── manifest.json 
+├── background.js 
+├── content.js
+├── popup.html 
+├── popup.js
+├── styles.css 
+└── icons/ 
 
 
 ---
